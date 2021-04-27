@@ -1,0 +1,55 @@
+<html>
+<head>
+<title>Form - HTML</title>
+<script>
+function takevalue()
+{ 
+var ftname=document.getElementById("fname").value;
+var lsname=document.getElementById("lname").value;
+var email=document.getElementById("mail").value;
+var number=document.getElementById("number").value;
+var date=document.getElementById("date of birth").value;
+var sex=document.getElementById("sex").value;
+document.write("Your information is: <BR>"+"FIRST NAME: "+fname+"<br>");
+document.write("Last name is: "+lname+"<br>");
+document.write("Email is: "+email+"<br>");
+document.write("Number is: "+number+"<br>");
+document.write("Date is: "+date+"<br>");
+document.write("Sex is: "+sex+"<br>");
+</script> 
+</head>
+<body>
+<br>
+<hr><br>
+<form>
+<p style="text-align: center;" action="/my-handling-form-page" method="post">
+<label for="name">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;First Name:</label>
+<input type="text" id="fname" name="user_name"><br><br>
+<label for="name">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Last Name:</label>
+<input type="text" id="lname" name="user_name"><br><br>
+<label for="mail">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email:</label>
+<input type="email" id="mail" name="user_email"><br><br>
+<label for="number">Mobile Number:</label>
+<input type="number" id="number" name="user_number"><br><br>
+<label for="date of birth">Date Of Birth:</date of birth>
+<input type="date" id="date of birth" name="user_date"><br><br>
+<label for="sex">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sex:</label>
+<input type="radio" id="sex" name="user_sex" value="male" checked> Male
+&nbsp;&nbsp;&nbsp; <input type="radio" id="sex" name="user_sex" value="female"
+checked> Female
+&nbsp;&nbsp;&nbsp; <input type="radio" id="sex" name="user_sex" value="others" checked> Others <br><br>
+<label for="message">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Message:</label>
+<input style="height: 100px; font-size: 15pt;"><br><br>
+<button type="button" onclick="takevalue()">Submit</button>
+</p>
+</form>
+<style>
+body {
+    background-color: rgb(127, 174, 235);
+}
+</style>
+
+</body>
+</html>
